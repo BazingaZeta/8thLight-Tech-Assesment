@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- -->
+<html>
+    <head>
+        <!--linking jquery-->
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <!--linking stylesheets-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+
+        <title>Google Book API Search</title>
+    </head>
+
+    <body>
+
+        <!--div that holds the search box and button -->
+        <div id="search" class="#f5f5f5 grey lighten-4 z-depth-5">
+             <form id="bookForm">
+                <div class="inputField">
+                    <input type="search" id="book">
+                    <label for="search">Search for title or author</label>
+                </div>
+                <div class="btnHolder">
+                     <!--button linked to bookSearch function in script.js -->
+                     <button class="btn" onclick="bookSearch()">Search</button>
+                </div>
+            </form>
+        </div>
+
+        <!--div that holds results -->
+        <div id="results">
+
+
+
+        </div>
+
+    <!--linking script.js-->
+    <script src="script.js"></script>
+    </body>
+
+</html>
